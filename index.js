@@ -133,13 +133,62 @@
 //   model: "Corolla",
 //   year: 2009
 // };
-var person = {
-    name: "Davit",
-    surname: "Harutyunyan",
-    age: 12
-};
-console.log(person);
-var x = 10;
-var y = 23;
-var sum = x + y;
-console.log(typeof sum);
+// const person :{name:string,surname:string,age:number} ={
+//     name:"Davit",
+//     surname:"Harutyunyan",
+//     age : 12
+// }
+// console.log(person);
+// let x : number = 10;
+// let y : number = 23;
+// let sum :number  = x + y ;
+// console.log(sum);
+// enum direction {
+//     Up,
+//     Down,
+//     Left ,
+//     Right 
+// }
+// console.log(direction.Up)
+// Union Typees
+// let userName: string = "David";
+// console.log(userName);
+// let userAge : number = 21;
+// console.log(userAge);
+// function statusCode(code: number | number[]) {
+//     // Determine the type of 'code'
+//     let typeOfCode: string;
+//     if (Array.isArray(code)) {
+//         typeOfCode = 'array';
+//         console.log(`My Status code is ${code.join(', ')}, type is ${typeOfCode}`);
+//     } else {
+//         typeOfCode = 'number';
+//         console.log(`My Status code is ${code}, type is ${typeOfCode}`);
+//     }
+// }
+// // Test the function
+// statusCode(300);          // Output: My Status code is 300, type is number
+// statusCode([210]);        // Output: My Status code is 210, type is array
+// FUNCTIONS//
+// function getTime(): number {
+//     return new Date().getTime();
+// }
+// console.log(getTime())
+// function printHello(): void {
+//     console.log('Hello!');
+//   }
+//   printHello()
+//   function multiply (a:number,b:number){
+//     return a + b;
+//   }
+//   console.log(multiply(10,30))
+// the `?` operator here marks parameter `c` as optional
+// function add(a: number, b: number, c?: number) {
+//     return a + b + (c || 5);
+//   }
+//   console.log(add(10,20))
+function pow(value, powvalue) {
+    if (powvalue === void 0) { powvalue = 5; }
+    return value * powvalue;
+}
+console.log(pow(40));
